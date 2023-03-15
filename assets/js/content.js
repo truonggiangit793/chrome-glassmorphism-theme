@@ -55,6 +55,11 @@
         localStorage.setItem("bookmarks", JSON.stringify(myBookmarks));
     };
 
+    const getBookmarks = function (params) {
+        const bookmarks = localStorage.getItem("bookmarks");
+        return bookmarks ? JSON.parse(bookmarks) : null;
+    };
+
     (function installDefaultBookmarks(params) {
         storedBookmark(bookmarks);
     })();
@@ -77,8 +82,9 @@
 
     (function installBookmark() {
         const bookmarksElement = document.querySelector("div#root_bookmarks");
+        const myBookmarks = getBookmarks() ? getBookmarks() : bookmarks;
         if (!bookmarksElement) return;
-        bookmarksElement.innerHTML = bookmarks
+        bookmarksElement.innerHTML = myBookmarks
             .map((bookmark) => {
                 return `
                 <div class="root_bookmarks-item">

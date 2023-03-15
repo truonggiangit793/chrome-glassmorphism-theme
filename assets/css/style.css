@@ -1,0 +1,123 @@
+* {
+    font-size: 16px;
+    box-sizing: border-box;
+}
+video#video_background {
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    object-fit: cover;
+}
+section#root {
+    position: relative;
+    z-index: 10;
+    height: 100vh;
+    padding-top: 60px;
+}
+section#root header#root_header {
+    position: fixed;
+    top: 0;
+    height: 60px;
+    width: 100%;
+    background: rgb(255 255 255 / 20%);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 10px -4px rgb(0 0 0 / 50%);
+}
+section#root h1.root_title,
+section#root h1.root_title span.root_title--greeting {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    user-select: none;
+    margin: 1.5em 0;
+    margin-bottom: 2em;
+}
+section#root h1.root_title {
+    font-size: 2.5em;
+}
+section#root h1.root_title span.root_title--greeting {
+    font-size: 1em;
+}
+section#root div#root_bookmarks {
+    padding: 0 12em;
+    display: grid;
+    grid-template-columns: repeat(8, auto);
+}
+section#root div#root_bookmarks .root_bookmarks-item {
+    margin: 1.2em;
+    transition: all 0.2s linear;
+}
+section#root div#root_bookmarks .root_bookmarks-item .root_bookmarks-link {
+    text-decoration: none;
+}
+div.card {
+    position: relative;
+    width: 140px;
+    overflow: hidden;
+    user-select: none;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.39);
+    background: rgb(255 255 255 / 20%);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 20px -4px rgb(0 0 0 / 20%);
+    transition: all 0.2s linear;
+}
+div.card .card_thumbnail {
+    padding: 26px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.card .card_title {
+    color: white;
+    backdrop-filter: blur(10px);
+    width: 100%;
+    text-align: center;
+    padding: 6px 18px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+div.card .card_title p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+a.root_bookmarks-link:hover div.card {
+    transform: scale(1.15) translateY(-10px);
+    box-shadow: 0px 0px 50px -4px rgb(0 0 0 / 10%);
+}
+a.root_bookmarks-link:hover div.card::before {
+    content: "";
+    position: absolute;
+    top: -90%;
+    left: -100%;
+    height: 300%;
+    width: 80%;
+    transform: rotate(20deg);
+    animation: glassEffect 0.4s linear;
+    background: linear-gradient(90deg, transparent, #ffffff6e, transparent);
+}
+section#root h1#root_timer {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    user-select: none;
+    margin-top: 1.4em;
+    font-size: 5em;
+}
+@keyframes glassEffect {
+    from {
+        left: -100%;
+    }
+    to {
+        left: 110%;
+    }
+}

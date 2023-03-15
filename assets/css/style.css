@@ -110,7 +110,7 @@ section#root h1#root_timer {
     color: white;
     font-weight: bold;
     user-select: none;
-    margin-top: 1.4em;
+    margin-top: 1em;
     font-size: 5em;
 }
 @keyframes glassEffect {

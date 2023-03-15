@@ -65,6 +65,11 @@
             thumbnail: "./assets/thumbnails/classroom.png",
         },
         {
+            name: "IELTS",
+            link: "https://meet.google.com/gwk-iryf-crf",
+            thumbnail: "./assets/thumbnails/meet.png",
+        },
+        {
             name: "Github",
             link: "https://www.github.com",
             thumbnail: "./assets/thumbnails/github.png",
@@ -83,6 +88,11 @@
             name: "Translator",
             link: "https://translate.google.com/?hl=vi",
             thumbnail: "./assets/thumbnails/translate.png",
+        },
+        {
+            name: "MacLife",
+            link: "https://maclife.io",
+            thumbnail: "./assets/thumbnails/maclife.png",
         },
     ];
 

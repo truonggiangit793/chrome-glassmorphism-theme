@@ -20,7 +20,7 @@ section#root {
     width: 100%;
     height: 100%;
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 20px;
 }
 section#root header#root_header {
     position: fixed;
@@ -36,11 +36,11 @@ section#root h1.root_title {
     color: white;
     font-weight: bold;
     user-select: none;
-    margin: 0.6em 0;
+    margin: 0.2em 0;
     margin-bottom: 0.8em;
 }
 section#root h1.root_title {
-    font-size: 2.5em;
+    font-size: 2.2em;
 }
 section#root h1.root_title span.root_title--greeting {
     font-size: 1em;
@@ -111,7 +111,7 @@ section#root div#root_timer {
     color: white;
     font-weight: bold;
     user-select: none;
-    margin-top: 0.6em;
+    margin-top: 0.4em;
     font-size: 5em;
 }
 section#root div#root_timer p {

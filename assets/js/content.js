@@ -70,6 +70,21 @@
             thumbnail: "./assets/thumbnails/meet.png",
         },
         {
+            name: "Drive",
+            link: "https://drive.google.com",
+            thumbnail: "./assets/thumbnails/drive.png",
+        },
+        {
+            name: "Google",
+            link: "https://www.google.com.vn/?hl=vi",
+            thumbnail: "./assets/thumbnails/google.png",
+        },
+        {
+            name: "Gmail",
+            link: "http://gmail.google.com/",
+            thumbnail: "./assets/thumbnails/gmail.png",
+        },
+        {
             name: "Github",
             link: "https://www.github.com",
             thumbnail: "./assets/thumbnails/github.png",
@@ -93,6 +108,11 @@
             name: "MacLife",
             link: "https://maclife.io",
             thumbnail: "./assets/thumbnails/maclife.png",
+        },
+        {
+            name: "Netflix",
+            link: "https://www.netflix.com/browse",
+            thumbnail: "./assets/thumbnails/netflix.png",
         },
     ];
 

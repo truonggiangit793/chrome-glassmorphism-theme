@@ -47,7 +47,7 @@ section#root h1.root_title span.root_title--greeting {
 section#root div#root_bookmarks {
     padding: 0 12em;
     display: grid;
-    grid-template-columns: repeat(8, auto);
+    grid-template-columns: repeat(6, auto);
 }
 section#root div#root_bookmarks .root_bookmarks-item {
     margin: 1.2em;

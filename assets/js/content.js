@@ -42,6 +42,7 @@
             thumbnail: "./assets/thumbnails/translate.png",
         },
     ];
+
     const timeCounter = function () {
         const time = new Date();
         const hour = time.getHours() < 10 ? `0${time.getHours()}` : time.getHours();
@@ -49,6 +50,15 @@
         const sec = time.getSeconds() < 10 ? `0${time.getSeconds()}` : time.getSeconds();
         return `${hour}:${min}:${sec}`;
     };
+
+    const storedBookmark = function (myBookmarks) {
+        localStorage.setItem("bookmarks", JSON.stringify(myBookmarks));
+    };
+
+    (function installDefaultBookmarks(params) {
+        storedBookmark(bookmarks);
+    })();
+
     (function installTimeCounter() {
         const timerElement = document.querySelector("h1#root_timer");
         if (!timerElement) return;
@@ -56,6 +66,7 @@
             timerElement.innerHTML = timeCounter();
         }, 1000);
     })();
+
     (function initGreeting() {
         const nowTime = new Date();
         const greeting = document.querySelector("span.root_title--greeting");
@@ -63,6 +74,7 @@
         greeting.innerHTML =
             nowTime.getHours() >= 0 && nowTime.getHours() < 12 ? "Good morning" : nowTime.getHours() >= 12 && nowTime.getHours() < 18 ? "Good afternoon" : "Good evening";
     })();
+
     (function installBookmark() {
         const bookmarksElement = document.querySelector("div#root_bookmarks");
         if (!bookmarksElement) return;

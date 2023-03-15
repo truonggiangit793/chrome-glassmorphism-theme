@@ -25,6 +25,7 @@ section#root {
 section#root header#root_header {
     position: fixed;
     top: 0;
+    z-index: 100;
     height: 60px;
     width: 100%;
     background: rgb(255 255 255 / 20%);
@@ -92,7 +93,7 @@ div.card .card_title p {
     text-overflow: ellipsis;
 }
 a.root_bookmarks-link:hover div.card {
-    transform: scale(1.15) translateY(-10px);
+    transform: scale(1.15) translateY(-30px) rotate3d(0, 10, 10, 10deg);
     box-shadow: 6px 20px 30px -6px rgb(0 0 0 / 50%);
 }
 a.root_bookmarks-link:hover div.card::before {

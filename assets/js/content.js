@@ -36,6 +36,11 @@
             link: "https://platform.openai.com",
             thumbnail: "./assets/thumbnails/openai.png",
         },
+        {
+            name: "Translator",
+            link: "https://translate.google.com/?hl=vi",
+            thumbnail: "./assets/thumbnails/translate.png",
+        },
     ];
     const timeCounter = function () {
         const time = new Date();

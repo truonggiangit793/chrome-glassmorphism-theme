@@ -43,7 +43,8 @@ section#root h1.root_title {
 section#root h1.root_title {
     font-size: 2.2em;
 }
-section#root h1.root_title span.root_title--greeting {
+section#root h1.root_title span.root_title--greeting,
+span.root_user--greeting {
     font-size: 1em;
 }
 section#root div#root_bookmarks {

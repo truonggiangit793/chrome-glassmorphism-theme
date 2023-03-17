@@ -1,5 +1,6 @@
 (function () {
     "use strict";
+    const USER_NAME = "Truong Giang";
     const quotesArray = [
         "“We cannot solve problems with the kind of thinking we employed when we came up with them.” — Albert Einstein",
         "“Learn as if you will live forever, live like you will die tomorrow.” — Mahatma Gandhi",
@@ -155,7 +156,9 @@
     (function initGreeting() {
         const nowTime = new Date();
         const greeting = document.querySelector("span.root_title--greeting");
-        if (!greeting) return;
+        const userName = document.querySelector("span.root_user--greeting");
+        if (!greeting || !userName) return;
+        userName.innerHTML = USER_NAME;
         greeting.innerHTML =
             nowTime.getHours() >= 0 && nowTime.getHours() < 12 ? "Good morning" : nowTime.getHours() >= 12 && nowTime.getHours() < 18 ? "Good afternoon" : "Good evening";
     })();
